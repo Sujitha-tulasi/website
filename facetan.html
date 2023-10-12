@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facetan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:ital,wght@0,300;0,500;0,600;1,300;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+}
+nav{
+    position:relative;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+}
+
+.navbar{
+    height:100%;
+    max-width: 1200px;
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo{
+    color:black;
+    font-size: x-large;
+    
+    font-weight: 600;
+    text-decoration: none;
+}
+nav .navbar .nav-links{
+    height:100%;
+    line-height:70px;
+}
+.links{
+    display:flex;
+}
+.links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-top: 12px;
+}
+.links li a{
+    height:100%;
+   color:black;
+   text-decoration: none;
+   white-space: nowrap;
+   padding:10px;
+   
+}
+.links li .arrow{
+    
+    height:100%;
+    width:22px;
+    text-align: center;
+    color:black;
+    line-height: 70px;
+    padding:10px;
+    transition:transform 0.3s ease;
+}
+.links li:hover .htmlcss-arrow{
+    transform: rotate(180deg);
+
+}
+.links .sub-menu{
+    position: absolute;
+    top:70px;
+    left:0;
+    background: white;
+    line-height: 40px;
+    border-radius:0 0 3px 3px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    display: none;
+}
+.links .sub-menu li{
+    padding:0 22px;
+    border-bottom: 1px solid black;
+}
+.links .sub-menu li a{
+    color:black;
+    font-size: 15px;
+    font:500;
+}
+.navbar .nav-links .links li:hover .htmlcss-sub-menu{
+    display:block;
+}
+
+
+.fd{
+    height:450px;
+    width:1300px;
+    
+     display:flex;
+    
+     justify-content: space-around;
+     justify-content: space-evenly;
+     margin:auto;
+     animation:move 2s;
+}
+@keyframes move{
+    from{
+        opacity: 0;
+        height:30px;
+        transform: rotateX(-90deg);
+    }
+    to{
+        opacity:1;
+        height:500px;
+        transform:rotateY(90deg) ;
+    }
+}
+.img{
+    padding:15px;
+}
+.et{
+    border:3px solid slategray;
+}
+.ew{
+    margin:auto;
+    margin-left: 80px;
+}
+.but{
+    margin-left:200px;
+    font-size: larger;
+    background-color: pink;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    width:150px;
+    height:50px;
+}
+.next{
+    margin-right:200px;
+    font-size:larger;
+    background-color: pink;
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    width:60px;
+    width:150px;
+    height:50px;
+}
+footer{
+            background-color: black;
+            color:white;
+            bottom:0;
+            position: relative;
+            bottom: 0;
+            width:100%;
+        }
+        .foot{
+            display:flex;
+           
+        }
+        .services{
+            margin-left:200px;
+           flex-grow:1;
+        }
+        .services li a:hover{
+           
+            text-decoration: wavy;
+            text-decoration-color: pink;
+        }
+        .contact{
+            margin-left:400px;
+            flex-grow:1;
+            
+        }
+        ul{
+            text-decoration:none;
+            list-style-type: none;
+            line-height: 2.5;
+        }
+        a{
+            color:white;
+            text-decoration: none;
+        }
+        .font{
+            font-family: "Algerian";
+            font-size:xx-large;
+            margin-left: -50px;
+        }
+        .abx{
+            margin-left:-45px;
+        }
+        .suj{
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="logo">Beauty Hub</div>
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Our Services</a>
+                        <i class='bx bx-chevron-down arrow htmlcss-arrow'></i>
+                        <ul class="htmlcss-sub-menu sub-menu">
+                            <li><a href="hair.html">Hair Care</a></li>
+                            <li><a href="skin.html">Skin Care</a></li>
+                        </ul>
+                       
+                    </li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+    <img class="suj" src="https://img.freepik.com/premium-photo/beautiful-wet-girl-palm-leaves-natural-cosmetics_792372-809.jpg"height="700px">
+   
+    <div class="fd">
+        <div class="et">
+            <img src="https://5.imimg.com/data5/FA/PI/IW/SELLER-8438256/d-tan-sara-bleach.jpg" height="350px"width="300px">
+            <p class="ew">Sara De tan</p>
+            <p class="ew">price:700$</p>
+        </div>
+        <div class="et">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgWFRUYGRUYGhgYGBoYGBgaGhgVGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHjQrJSs0NDQxNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALcBEwMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQMGAAECB//EADsQAAEDAwMCBAQFAwMCBwAAAAEAAhEDBCEFEjFBUQZhcYETIpGhMlKxwfBC0eEHFHJi8RUWIyRDksL/xAAaAQACAwEBAAAAAAAAAAAAAAACAwABBAUG/8QAJhEAAwACAgICAgIDAQAAAAAAAAECAxEhMRJBBCJRYRMyI0KhFP/aAAwDAQACEQMRAD8A8/ZVClFZSUNOJ6I+20gk8IK+VEnR+z6FxdIXLRlWc6HDeEiv7fYYRYs85Ogkmuwmg7CmiUFQqYRNOotSYNFg0GAYVuo5AEqiadcQ4K1sq72QTyORyPMIb3rgy0vtyOaNuxp3bWl35jkj07IPUKskAJVYX7m7qbzLmGJ7jkfZMtMO4ueehhcxtuvsaNJLgGq3VZmQzc3qrb4fvg9gz0XFJrdvRDU6Hwn72fgccjs7uPIpmOtP9C8iVL9jG+Ztc0jhxI+xMfYIcOBCaPYHs8xkeqU1vlmeivJOnsrG9rXs7ZW2nyTNjgRI4SVnzBTWtwWGDlp+yrHeuGVkx7W12M6lNQ7IXbrlvdQPum90/aM+mFMK6cl5v2jqg7nWWgYyULuV2Eop9B9zVDUiu9V5AQV1dvf5BC7VnvP6k0xgS5oytXc/kqLYpFy5yzum+x6SXRxC4eVj3qB71EWc1HITftcD2K7rVEFVeiRC429fcwFQ1XwlGiXuNpTC5et8PyWzDc6rRNQG50qa6YhNMfLkwuGomA+xHXYh/hZTOqxc0qGVWibNU7bAW0f8NYiK2IaFgA3hFWFqJ4RdNgLV3aw1y8/m3s6kvgMqWY28Lz7xVa7XY7r1BzwWqi+LGDlavjV4tCKpsrFnYkiTMKR9HamVm5pYFDeVGhdOcrbAlVT0R2rshWqyfgKq2zVZLEuAkCSMgLQ642HmwudbAtRdsqF8wDE+UYlMLbUwwQeDn3Q2pUA9u4ZDglBJ2AHpI+nH2hc5vy5CS1wXaxvXOGHKwWdbe2CvNNI1DYYJx+it9hqInlCnoup30WywfHyn2QWt0yHg/wBLm59WmT9cfdZbXAMEHKX+K9RhjIPUj3hO8lU8+hKhrIteyelV6Lsnsqbp+ruD4ccK1UrprmnOehSlSZoePRu4y0kHIOEsc93cqerdDaO5yUG56C6fYCnTaZDcVXdyuaFQFauDhL6VSClNsb4obuconPUPxlBUrKE0EOeoH1EK+4UL66JImgl9ZDvqod9VQPqIlJRLUqISo9afUUD3o1IDZJQuixwKslvc724ykmnaLUqkYIar/ougNptAhaMSaM2WpFemUiHTBTWq1Mri2a0YCBeE4RvYC6mu6VKEU2kthimitke1YiNixWQq9O9AESgn6gd+EpurgtdCa6Rbh+SuPnhS+Tpw9od0b6WKteIapc0qzi1aGlVrVgMhKw1ui6ngp7bpw4U1GoXHJQ1QQ4+qkoHK7GNIRgesnJatIt95Cv2l6cIGFSvCrxuheoae0QE1sZ86ntIomr0fh3D6QyHQ9gHMv5aB6z9QkF8WNcWbi58w8NA2MxiXz8zpxgR1nhWbx3bPZcsrNHyvbtByAHhrhEjjkH2Va0xg+C0EZcNzu+48rJSSbFRupQou37BI56JppWo7mxMH16+qXanQLCGvGP6T3HYnugKctMj3HdLemPl6PTdG1Ax8xS3xU4Oh5J28GOWnkPHmD9kg03UHSGzAJ5PT1T67tnbJa4PHUEQfVqHeh04nS8kInUHsLS7Bd+HPPbHSfNP7CncubAY6O/Cj01m5g3SQ04nJA7Z9PsrdTqAANBjHPkicrh+hayPbh9oQOaWmHTIxldlyM1MMdG0y8Y5HHml1YwgpcANNVpnFZ2EmfVhyYVqiTVn/ADIVIaYf8dQvrIfeo3PVqSNkznqJ1RRl621jncAlMUgtmPeoXPTS20So/kQFYNP8MNGXZTJhsTWWUVK2sHvPytPqrPpHhcYL8lWm105jBwEc1oHCfONLszVmb6ILSxYwYCMC4lZKYJZBenCDaxGXJWmtChYPtUQGUW9qgpjKhDvYsU+xYoQ8m1a1O6QjtKrFkTwmVW3D1ttmNsLmfLadaZ0cPEhzKu4YSPV6eD3RTKhYYPCA1O6EHKRix6e0MdIo10SHkFS2xUd/l5Km0+mXGF1oXBlh+OQs/hqpDwvWdKfLQvONC00iDCvumkgAJmuBnzKmtaG97asqsLHtDmO5B+xHYjuvMtW0d9s+DmmT8j46TMO7H9V6WKiFuqLXgte0OaeQRyl1CpGPHkcs87rOpvYQYPkeeFVLm22H5TjtyF6Pc+BmuM06xYOgc3dHluBBhAXH+n9bkVmOPaHN+6z/AMVL0blmxtdlBa+DJb7tP7FObDVw2AT7H9k9b/p7W5c9g9z/AGVb1vTjbP2RuPcAwheKn2hkfKmH9WWPTr5ry6G7IOPMRO76ifbzRGpksAeC4NPykAmAc4x7/RVzSqj97S1pJHIHb+forrZsbUa9j2ktLRMggcxgnqMZ7tTJna8RF5Wr812V62u3h0jjzRNa4nJU+oaG9gmmd7O39Q/YoK1salQwGkDuUtrf1QSf+zBbislrpJwCr3Z+Fhy/J80zpaAxv9I+iZOFgVnldHnFKzqO4aUytfDlR/OF6HS05jegRTKLR0TFiXsTXyKfRTbTwm0fiz6pvb6KxnQJ45D1HI1KQurp9shp27W8BSrjcs3IhZJKyVHK3Ksh3K6BUYK6BUIDX7sLLZ8hR6kcIayq9FC/QyqcIe35U73YUNEZUIFrFqVihCmsoOClNB0KxiyHZdNsvJZ82Cbex0ZnK0Ue606o7qoGaA934iV6D/sR2XbbQDojjFMoGstNnnf/AJUB5CO03wy1h/Crz/tgtstwmoB097FtnYBvRMqdGFMGLtoU2R02Yxi2aalascoCcNCkXAXQUIYQl1/pNN4Jc0EpktP4VEKjYeHyx7i0fKTwmp0/azjgmfMEymVB+SELW1Wiagoh4L3TAEkS0EkbgInBxMpORqZbXY2Nt6E9xU5Cl0V5+IG8gyTjsJ9l3qFqRJA9lJoA+Z7ugET5kz+y5OF3WZbfO/8Ah0cjlYWPSIUTioal8wT87cc5ChZqNN07XtMdiu5tLs5STfQVK054HKAragwdUK6/aTwSEt54XbQaw2/Qxq3TUK+5ULLxkn5TC7bXYRnlUs0V00R4qXaIamoAdFLTupHCkfasdERKCuqG0GAZ8kzYOg344XTKoPBVdFw9py3Hn3RbK2QSAPdEitDxdNQlvcTgopqhQPftlqT06kFPbgS0qvVRDioFI1p15CIpJNRqJnbvUI0HSsUe5YrKDGhdhL2XYKmF0FTRQXCyEKLkLsVwq0QmIWKL4wWhVCshMttUPxQuhVVkCWrTioRVW/iqEJAugofirPihUQlJXJco3VguPiqFgt9XDBE/M+QPLGT9Eor2oLdzAA9kOZ0hzcj2PB9UBe1KlW8kA/DY1zfKZAHuclReI7G4pkXNu9xDGjfSP4XtE7sdDHVYc3+R69G/DHiv2y4hzatNrm/1NB+vQ+mQktwwNJYXENOYBI5xmOEfog3US5rvle0PaO28SY+s+6X1Y3Ec5z1z6rBdPHapdhxKrc+hVf8Ah2m+S2QfUwfVcadp3wnDPSD6pwxnbjmEdbWjTnbnzRXneRaSCUKHsEbxxKjc0eicOtvQIO6s9zSAYPQpaw3+Av5JFziAY3tntOfouwz+BJ7jw/X3y10g8+n86KZt0+kWteIERiRgeSZWCpW1yRXLehsyo5vCKo3f5h7qFhDhIODxHZdNYgn5Fw+yqxxXaCK9qx7eJVd1TSHNaXNJkST2IT2k/acfwJi4BzZGQQupgzrIv2YcuJy/0UfTtW2jOeh7+qsthdh45kdD5eareqac2k/cyQHSYJxPUKbTa5YSZxAx/ZakIZbHcKv3ohyc2dyHiQl+q2p/EOnKsuexex6OtqqVhyJtyoE0Od6xB/EW1AdFdsdWLkc/UYHKrGmVOE2qGQrojnQe3VvNSN1bzSFbAVFaLGNV81BV10N6pMkuqTChaktLvFLAfxKVnihn5l4/e1XB2HH6rhly/wDMVYxYj2hviZv5gpB4jb+YLx+h8d34dyfaZody8guJAU0V/GekUda3/hR7bwxJSfStLLGwcmOv6lH/AAc5PPtPv0ScmRS9LsOcO3yTuu3HrH3KH3Fx+Zz/AP7R+i5faH+lxBHfIUVN7mCKmCZh3Q+iz03XbNkYpS4QwpW5BERH8+qLvqbnUntbAc5pAniYx6qGwO5sdeQp93MjHH87LDaeOtplvlkWj1G06DWdWMazP/SA39kE943O85U1W2Ey0n+3v1W6duGulxB7QsmWqp7YyVM7ZqiyXBoHqU1FZrI4CX0qgDp9fuuNSYXtlhWv4vipf5FZE2+egPWPF1OmXN6ggY6mQP8A9Ke01L4n4YJgEwZiV574i8OPeS8fi6kdeORweAlfhrWX2tYMqEhkxJnaOm4gfiwFtSVCWvFnslOoRyu69uyo3a9oIKgs7tlRoc0ggjBnkdwi2BVrTIV2tRfauyS6g44PJYT0Pl59Eypunrzx6JtVt2vYWuEgiCkdtTLQ5hJJYYz1aeFl+ViTnyQ3He+GFuZ2Rdg/lsdJQbHouyILxByBnzCD4TfkVnX1AbqkwmHNkgk580jubVhfuY+Mw5pnkDp9VZbup8xB/TOFW7lklz25M5b2xyPPIXak5zGNoAwAh08Dj+QmtIBwk5nlJLB5IMjJ9hIHKbUH7XFp5mR9AiKEeq2ZpP8A+h3B7eS1bqzXVqKjCw57HsVXXUCwlruQohkvZvetqNYi0Foo2lO4VjLPlVe0RswrYyn8qjBrsVlq1CLfTUDmoQThJ9VGCnKDrWpe6AFC0Ul2nPqP+UYVs0TwhwXBWjR9Ca2CQrFTohowEaWh2+BPZaBTYPwhMXhjBgSegC7dWkkN6cn+y4cPqsHyfmqNzPL/AD+B2PE65ZEyq4nLYH6olrg7BXDAT0wumU4ORC5H/ovy3s0uJ0T29M9Fu+sQ9hBGOvke481NbjPKOZC6GHIqQl05ZU9Krupv2P5aYn8zeh/nZWSrRHI4OVX/ABLalhFVv9JE/wDGcg/VONLud7AQZwruVS0y7fVIieI9FBklMn0kM5mcLl5IcvkbNJkTGLl7Dy0wf5hGBk+qx1AqkqXRPJexe14OHt9+iTa74Np12nb8rukKxPo91NQEDmVs+PmpvVC7la2jzfw0y5s6woVGTSJw7t6Ht/Zep2zZCHqUWPGQD+xRFsyMfRbk9iK4QS1qUaiyKgP5gR6xlNpS65EuB7fvylfIpKGi8S+wOWdQt2D2GqGvHzgSznsdyla3C3poHxXyw7m8P6bI48jz9Fm+GvuHmr6slr1Xh2Gkj9lVLkVPiOLDDS4gy0bg4fthWp9F5dhwjBzM/fokVVjnOc+nOXO3B2RIcc54GPuu0jnNgNmx4MvI6mciegEJpc3RFRpDZG1p+vOPQIH47jLCzjmCD80gwPKFBUc57xteGhoa2T1gQfv+ishb6FWRIHKF1u33N3AZH6LjT3hoA3SQB3TGsZEqFyyl/FWKa/sB8R0AgTI9xKxFtD9op3h4cK7UWfKqh4XsnkA7SB5r0C1tCBlRiqXImqUCeihNi4qzi1HZdfAHZVoikrdHSp5Te305rRwmDaSnawKbQXCBmU4Q+pVNlMnqYb9f8SmO1LfEFP8A9u8/lh30P+UNt+LCh/ZCmnfgYRTLjdDVVGV5TLTruHZK4eaGdGS32tMQin0gRwgLO5DoynNMSP5hVMy+EKumnsANKOFMwqd1Lsf56rgsIRynD2A68gW7ph7Sx2QcEeSywtWsYGtENGAOwU2zqpGt7lE8jZPRETnCjdSlGfDB6/ZY2mJ8h+qW4p8MnmkQ06S38NHMp44WOp8piwaQH8vIsqsURbHRMa7Bx16oeo1JuXLY2b2hc55Bwp6V0Pf7Lm4Zj7oemwyPMpKyXNaTGuZpcjV1SRhC1efVbcVEXJl5XXYuZ0StWtPqPb8Rr2/IJ2ujJ3HjOCuZHBcBOASYz6qas80qI+IS4kwSMGOZ9sZW34cPfkJz1xoAun02Bzqj3BsZB7E7QOZBykNShkuoVXb24FN0EBomdo5M4wmerMYWvBe6A2fwg7QeMzz1+ird5bSKdQYJIAczEFrsgnsT/ZdNGJjGwvfm+dhY8zkRtPT26KRtkZcNpgAEEAwSfmwfVBWOofODUZ8zSQSAYcfTiZ69Vu4fWc5pMvg52kgCeh9+SOisEdU2v3j5YBgjjPM49I+qegkskiOqWaZRcZc5vUxzj/H9k0IwAP4B/wB1AkB1WAkyPssRkeSxTYzyIKFgxgwFNtClK5c1QhGWrCFp9QDkqE3TfzD6qyyYrYKibdM/MPqpg9p4IVENQorulvY9n5muH1BXbnRwoTdBQiPKg8j1GCu6dyZ54W9Qp7azxGNzv1kKAsnPVc653wdGKLVpWo8ZVus7zHqvLLW5LSrTpmoyIlc7JNQ9oZUqkeh03BwwuxTCrVlqBCa09QCfj+TLX2MlYaT4Ca9PEcenZDtJmTkLZvWnEShy+TAwhvJO9ySZeuRi04z1hSAT2hAtryAiPiDqP7J05JaAqGggHESualSB5lRl4aMqBzwTOSirLpa9gqNnZMZ5KGcf8Luq5Dl/ZZbrnQ+ZOKjlqmAPVcl3uVkwk9PY7XBJUKg3ZWVHyl+oXoYwklHijzr9FPhDIU2vG0glsiY7df7I2+qMAY10FpEwQD9BCrPha6fWqvf/APG0MYMTufMmP+IgH/krFUutz3N6NJkEdgIInou3inxno5+at1oVazRbsIYAJABHIcACGgfXjyVTdRcx8gBwMBwcMhvMEj0JB81ZPEJe8htNxAZ8zh2IHyjaMxk58ku024LyWvpnft+XmTJPX2/T1TkIYHXqtlkAw4mROWGJIP8AOqL0mg55aSDjO4TtiRwRgnJx5nsj6Vk9rh8o/M8mC7djaxrowI5jsUztweS509ZcSMCODwOsBWTQVbsGIP7qSo8D14/cqE1gwS4yeg8+8IG3e85ecklx8pOG+ygSGrStof4o7rFAtE1SsGiSVX9U8StYDBCpHiTxkXnZSJPmkH+6pxur1HE9Gg491NlllvvErnmA/HlgKH4z3t3fFPsVWDfMM7GAAd+Sgq1+8d2jyKrZey7sc8j5Xk++VMNSr0iBvPuvP6Otvacn3Tihr+8Q+D+qvaLTR6BYeLIIbVET/UOE+FZj2y0gheN1dS245afsi9J8UPoGAZYe/RVsvZbtVtB8V0dQD78fslb6RBKb2NwK3zjIIW7m18lhy/2Zrh8IRvo9QpraqWop1HKHrUSEi5TQ+aH1heyMFPbW6B/sqJbVS0p7ZXcxnK5+TG5e0MaVItza3bC7DpM9fJKqF0jadRDNCanQY3PX2UjJ4BEIZlYe673g9YT1Ui2mTfDPVy5cY4P1ULqg7hRPehql6LUv2SPqdyoy5cblyX+aHYaR3K4e9a3KCtVDczhHMOiN6JKjvbuvPfGeq7iGN4kCByST/jhWLW9X2MLsjB5+wjvz90k/06sm3FatdVILaRAYCeargSXZ6hsR5v8AJdL4+FIzZr1JffBtk9lrSDmFjg3cQRBkkuk+ckfRNaeGbnhsyQB0ncQ0SeOiB0mu4tnMSR1g+RHun1GC3iPLz5W7ZhKpa6bUdWe+o8w507GNhgAENG4mZAA48+6bf+HuBlrgB2IM+cvkkjygJs6FG5h9FeyaAxRx80E89gFy+kD58R2EZBjqinNA/wAoevcABQsBdaiZOT3PJKWXNztOxvPXyHr3XWpau1jTkA8CMqvOuqjj+AgH+okfp091YUofC6CxJt58ligejxWlVcTAOTyV1XoEdZWLEIHoHkhZ8V3dYsVFG94PIXAcQZC2sUIEsuJ55WUSXENHLiAPUlYsUfQSPafDmmClSazsInuep+qcVLWQtLFio1SL7i0AQtS1BCxYljkLLm2hRUapaVixKypeI+B7a15Eppb1fNbWLnewqDGVFvetLEXoUdblG6osWKy0c71sFYsURbOS/dge5Ql06Gkg5HUjJhYsXRxf1Qp9nlvivVXVHFvDe31Gfurh4P8ACQoNFSsS6oWl4YD8jDHJAMOd554WLF0cKWjn539i/wBm4sYwEZADn/8AJ+SB5c/ROxUEhvUiVixGxSOH1PP7Jbdai1hAcT1jBg4k8LFitEFt7XLhuZUc2M8NI78FuUl1UmBUfUPwmglwg7iQfI/bz5W1istdlUqa01zv/TpsaGkxuBLv+UzE5RdHUCRJzPl7LFigckn+4PYff+6xYsUGH//Z" height="350px"width="300px">
+            <p class="ew">Gold De Tan</p>
+            <p class="ew">price:850$</p>
+        </div>
+        <div class="et">
+            <img src="https://5.imimg.com/data5/OT/NG/QE/SELLER-8438256/d-tan-bleach.png" height="350px"width="300px">
+            <p class="ew">Raga De Tan</p>
+            <p class="ew">price:900$</p>
+        </div>
+    </div>
+    <div class="fd">
+        <div class="et">
+            <img src="https://makeupandbeauty.com/wp-content/uploads/2010/04/Lotus-Herbals-Safe-Sun-Detan1-249x300.png" height="350px"width="300px">
+            <p class="ew">Lotus Herbals De Tan</p>
+            <p class="ew">price:900$</p>
+        </div>
+        <div class="et">
+            <img src="https://www.swagmee.com/media/mageplaza/blog/post/resize/400x/d/-/d-tan-1.jpg" height="350px"width="300px">
+            <p class="ew">O3+ De Tan</p>
+            <p class="ew">price:550$</p>
+        </div>
+        <div class="et">
+            <img src="https://3.imimg.com/data3/YV/XR/MY-9356574/20-500x500.jpg" height="350px"width="300px">
+            <p class="ew">Turmeric De Tan</p>
+            <p class="ew">price:400$</p>
+        </div>
+    </div>
+    <br><br><br><center>
+        <a href="./skin.html"><button class="but">Back</button></a>
+       </center><br><br><br><br><br><br>
+
+
+
+
+
+    <footer>
+        <section><center><p class="font">&#9813 Beauty Hub</p></center></section>
+        <br><br><br>
+        <section class="foot">
+            <div class="services">
+                <h3>Services</h3>
+                <p>-------------</p>
+                <ul>
+                    <li><a href="hair.html">Hair Care</a></li>
+                    <li><a href="skin.html">Skin Care</a></li>
+
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>----------------</p>
+                
+                <b>Phone No. :+91 8966454523</b><br>
+                 <b>Email : abc@gmail.com</b><br>
+                 <b>Address : xyz</b>
+                
+            </div>
+
+        </section>
+        <br><br>
+        <section><center>@copyright issue</center></section>
+    </footer>
+
+    </body>
+    </html>
